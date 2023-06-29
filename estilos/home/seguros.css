@@ -1,0 +1,70 @@
+@import 'uteis.css';
+
+.seguros-bg{
+    background-color: var(--c11);
+}
+.seguros-bg h1{
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 60px 20px;
+    margin: 0px auto;
+    font: var(--font-1-gg);
+    color: var(--w);
+}
+.seguros-planos{
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px 20px;
+    gap: 40px;
+    align-items: center;
+}
+.plano{
+    background-color: var(--p);
+    padding: 32px 32px 0px 60px;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+.plano li{
+    font: var(--font-2-m);
+    color:var(--w);
+    margin-bottom: 20px;
+}
+.plano li::before{
+    content: url('../../imagens/originais/icones/gerais/item-list.svg');
+    margin-right: 8px;
+}
+.plano .preço{
+    font: var(--font-1-g);
+    color: var(--w);
+}
+.plano .nome-preço{
+    justify-content: space-between;
+    align-content: start;
+    margin-bottom: 20px;
+}
+.plano h4{
+    margin: 0;
+}
+.plano h4::after{
+    content:'mensal';
+    font: var(--font-2-pp);
+    display: block;
+    text-align: end;
+    color: var(--c6);
+}
+.planos-prata h3{
+    font: var(--font-1-g);
+    color: var(--c6);
+}
+.planos-ouro h3{
+    font: var(--font-1-g);
+    color: var(--p1);
+}
+.planos-prata .btn{
+    background: var(--c10);
+}
+.plano .btn{
+    margin-bottom: 32px;
+}
