@@ -1,0 +1,45 @@
+@import 'uteis.css';
+
+.bicicletas{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+}
+.bicicletas-bg h1{
+    max-width: 1200px;
+    margin: 240px auto 40px auto;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font: var(--font-1-gg);
+}
+.bicicleta img{
+    border-radius: 5px;
+}
+.bicicleta h3{
+    display: flex;
+    font: var(--font-1-g);
+    color: var(--c11);
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.bicicleta h3::before{
+    content: '';
+    display: inline-block;
+    margin-right:8px;
+    width: 12px;
+    height: 8px;  
+    background-color: var(--p1);  
+    transition: width .2s;
+}
+.bicicleta:hover h3::before{
+    width: 24px;
+}
+.bicicleta h6{
+    font: var(--font-2-m);
+    color: var(--c8);
+    margin-top: .5rem;
+}

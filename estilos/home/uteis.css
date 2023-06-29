@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    /*Definição das fontes Poppins*/
+    --font-1-gg: 600 4rem/4.5rem 'Poppins', sans-serif; 
+    --font-1-g: 600 2rem/2.5rem 'Poppins', sans-serif;
+    --font-1-mg: 600 1.5rem/2.25rem 'Poppins', sans-serif;
+    --font-1-m: 500 1.125rem/1.5rem 'Poppins', sans-serif;
+    --font-1-m-b: 600 1.125rem/1.5rem 'Poppins', sans-serif;
+    --font-1-m-f: 500 1.125rem/2rem 'Poppins', sans-serif;
+    --font-1-p-b: 600 1rem/1.5rem 'Poppins', sans-serif;
+    --font-1-p: 500 1rem/1.5rem 'Poppins', sans-serif;
+    --font-1-pp: 500 0.75rem/1rem 'Poppins', sans-serif;
+    
+    /*Definição das fontes Roboto*/
+    --font-2-mg: 400 1.5rem/2.25rem 'Roboto', sans-serif;
+    --font-2-mg-b: 500 1.5rem/2.25rem 'Roboto', sans-serif;
+    --font-2-m: 500 1.125rem/1.5rem 'Roboto', sans-serif;
+    --font-2-mf: 400 1.125rem/2rem 'Roboto', sans-serif;
+    --font-2-p: 400 1rem/1.5rem 'Roboto', sans-serif;
+    --font-2-pp: 400 0.875rem/1.25rem 'Roboto', sans-serif;
+
+    /*Definição das cores primárias*/ 
+    --p1: #0047ff;
+    --p2: #100BE5;
+    --p3: #0300A6;
+    --p4: #020066;
+    --p5: #010033;
+
+     /*Definição dos tons de cinza*/
+
+     --w: #FFFFFF;
+     --c1: #F7F7F7;
+     --c2: #EDEDED;
+     --c3: #DEDEDE;
+     --c4: #CCCCCC;
+     --c5: #B2B2B2;
+     --c6: #9C9C9C;
+     --c7: #717171;
+     --c8: #595959;
+     --c9: #404040;
+     --c10: #2E2E2E;
+     --c11: #111111;
+     --p: #000000;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.btn{
+    margin-top: 1.25rem;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 5px;
+    background: var(--gradiente, linear-gradient(180deg, #0B49E5 0%, #221FCC 100%));
+    color: var(--w);
+    font: var(--font-1-m-b);
+}
+.ponto-final{
+    color: var(--p1);
+}

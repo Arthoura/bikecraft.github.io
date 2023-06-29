@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikcraft</title>
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft. ">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/home/style.css">
 </head>
 <body>
     <header class = "header-bg">
-        <div class = "header">
+        <div class = "header flex">
             <a href="./index.html"><img src="imagens/originais/icones/gerais/logo.svg" alt="Bikcraft"></a>
             <nav>
-                <ul class = "header-menu">
+                <ul class = "header-menu flex">
                     <li><a href="">Bicicletas</a></li>
                     <li><a href="">Seguros</a></li>
                     <li><a href="">Contato</a></li>
@@ -20,5 +20,125 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <!--Seção que contém a introdução-->
+        <section class = "intro-bg">
+            <div class = "intro grid">
+                <div class = "intro-descricao">
+                    <h1>Bicicletas feitas sob medida<span class = "ponto-final">.</span></h1>
+                    <p>Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft. </p>
+                    <a href="#" class = "btn">SELECIONE A SUA</a>
+                </div>
+                <img src="imagens/originais/gerais/img-intro.jpg" alt="bicicleta preta modelo Nimbus stark">
+            </div>
+        </section>
+
+       <!--Seção que contém as bicicletas-->
+        <section class = "bicicletas-bg">
+            <h1>escolha a sua<span class = "ponto-final">.</span></h1>
+            <ul class = "bicicletas grid">
+                <li class = "bicicleta" id = "bicicleta1">
+                    <a href="#">
+                        <img src="imagens/reduzidas/bicicletas/magic-home.jpg" alt="Magic Might">
+                        <h3 class = "bicicleta-nome">Magic Might</h3>
+                        <h6 class = "bicicleta-preço">R$ 2999</h6>
+                    </a>
+                </li>
+                <li class = "bicicleta" id = "bicicleta2">
+                    <a href="#">
+                        <img src="imagens/reduzidas/bicicletas/nimbus-home.jpg" alt="Nimbus Stark">
+                        <h3 class = "bicicleta-nome">Nimbus Stark</h3>
+                        <h6 class = "bicicleta-preço">R$ 4999</h6>
+                    </a>
+                </li>
+                <li class = "bicicleta" id = "bicicleta3">
+                    <a href="#">
+                        <img src="imagens/reduzidas/bicicletas/nebula-home.jpg" alt="Nebula Cosmic">
+                        <h3 class = "bicicleta-nome">Nebula Cosmic</h3>
+                        <h6 class = "bicicleta-preço">R$ 3999</h6>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!--Seção que contém o diferencial-->
+        <section class = "diferencial-bg">
+        </section>        
+        
+
+        <!--Seção que contém os parceiros-->
+        <section class = "parceiros-bg">
+            <h1>nossos parceiros<span class = "ponto-final">.</span></h1>
+            <div class = "parceiros-lista">
+                <ul class = "grid">
+                    <li><img src="imagens/originais/parceiros/caravan.svg" alt="Caravan"></li>
+                    <li><img src="imagens/originais/parceiros/ranek.svg" alt="Ranek"></li>
+                    <li><img src="imagens/originais/parceiros/flexblog.svg" alt="Flexbog"></li>
+                    <li><img src="imagens/originais/parceiros/dogs.svg" alt="Dogs"></li>
+                    <li><img src="imagens/originais/parceiros/lescone.svg" alt="Lescone"></li>
+                    <li><img src="imagens/originais/parceiros/surfbot.svg" alt="Surfbot"></li>
+                    <li><img src="imagens/originais/parceiros/handel.svg" alt="Handel"></li>
+                    <li><img src="imagens/originais/parceiros/wildbeast.svg" alt="Wildbeast"></li>
+                </ul>
+            </div>
+        </section>
+        
+        <!--Seção que contém o depoimento-->
+        <section class = "depoimento-bg grid">
+            <img src="imagens/reduzidas/gerais/depoimento.jpg" alt="Mulher pedalando">
+            <div class = "depoimento-container flex">
+                <div class = "depoimento-texto">
+                    <h2>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo a todos que amo. </h2>
+                
+                    <h5>Ana Júlia</h5>
+                </div>
+            </div>
+        </section>
+        <section class = "seguros-bg">
+
+        </section>
+    </main>
+
+    <footer class = "footer-bg">
+        <div class = "footer grid">
+            <a href="#"><img src="imagens/originais/icones/gerais/logo.svg" alt="Bikcraft"></a>
+
+            <div class = "footer-contato">
+                <h1>CONTATO</h1>
+                <div class = "fone">
+                    <p>+55 (81) 99834-7085 <br>
+                       ama@ecomp.poli.br</p>
+                </div>
+                <div class = "endereco">
+                    <p>Rua Ali Perto, 253 - Madalena<br>
+                       Recife - Pernambuco</p>
+                </div>
+                <div class = "redes-sociais flex">
+                    <img src="imagens/originais/icones/redes-branco/instagram.svg" alt="">
+                    <img src="imagens/originais/icones/redes-branco/facebook.svg" alt="">
+                    <img src="imagens/originais/icones/redes-branco/youtube.svg" alt="">
+                </div>
+            </div>
+            <div class = "footer-info">
+                <h1>INFORMAÇÕES</h1>
+                <ul>
+                    <a href="#">
+                        <li>Bicicletas</li>
+                    </a>
+                    <a href="#">
+                        <li>Seguros</li>
+                    </a>
+                    <a href="#">
+                        <li>Contato</li>
+                    </a>
+                    <a href="#">
+                        <li>Termos e condições</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <h5>Desenvolvido por Arthur Arruda. Alguns direitos reservados</h5>
+    </footer>
 </body>
 </html>

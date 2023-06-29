@@ -1,0 +1,69 @@
+@import 'uteis.css';
+
+.footer-bg{
+    background-color: var(--p);
+    margin-top: 100px;
+    padding: 63px 0px 0px 0px;
+}
+.footer{
+    padding: 0px 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 3fr 5fr 4fr;
+}
+.footer-bg h5{
+    font: var(--font-2-mf);
+    color: var(--c6);
+    text-align: center;
+    padding-bottom: 26px;
+    margin-top: 60px;
+}
+
+.footer h1{
+    color: var(--w);
+    font: var(--font-2-mg-b);
+}
+.footer ul{
+    margin-top: 28px;
+    font: var(--font-1-m-f);
+}
+.footer a{
+    color:var(--c5)
+}
+.footer-contato p{
+    margin-top: 28px;
+    font: var(--font-2-mf);
+    color: var(--c5);
+    position: relative;
+}
+.footer-contato p::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left:0px;
+    width: 250px;
+    height: 2px;
+    background-color: var(--c11);
+}
+.footer .redes-sociais{
+    gap:40px;
+    margin-top: 30px;
+}
+
+@media (max-width:800px){
+    .footer img{
+        display: none;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+@media (max-width:590px){
+    .footer{
+        grid-template-columns: 1fr;
+        justify-items: start;
+    }
+}

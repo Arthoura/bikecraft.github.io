@@ -1,0 +1,41 @@
+@import 'uteis.css';
+
+.intro-bg{
+    background-color: var(--p);
+    height: 665px;
+    position: relative;
+}
+.intro-bg::after{
+    content: url('../imagens/originais/icones/decoradores/cinza/bottom-left-cinza.svg');
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.intro{
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+}
+.intro-descricao{
+    align-self: center;
+}
+.intro-descricao h1{
+    color: var(--w);
+    font: var(--font-1-gg);
+    max-width: 528px;
+}
+.intro-descricao p{
+    margin-top: 2rem;
+    color: var(--c5);
+    font: var(--font-2-mg);
+    max-width: 528px;
+}
+.intro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}

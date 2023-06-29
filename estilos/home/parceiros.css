@@ -1,0 +1,38 @@
+@import 'uteis.css';
+
+.parceiros-bg h1{
+    margin-bottom: 120px;
+    margin-top: 120px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font: var(--font-1-gg);
+}
+.parceiros-lista ul{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.parceiros-lista li{
+        display: flex;
+        padding: 32px;
+        border-left: 2px solid var(--c2);
+}
+
+.parceiros-lista li:nth-child(n + 5) {
+    border-top: 2px solid var(--c2);
+}
+
+.parceiros-lista li:first-child, 
+.parceiros-lista li:nth-child(5){
+    border-left: none;
+}
+
+.parceiros-lista img{
+    margin: auto;
+}
