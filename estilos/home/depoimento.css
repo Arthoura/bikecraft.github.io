@@ -1,4 +1,4 @@
-@import 'uteis.css';
+@import '../globais/uteis.css';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
 .depoimento-bg{
@@ -57,4 +57,13 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0px
+}
+
+@media (max-width:1200px) {
+    
+}
+@media (max-width:800px) {
+.depoimento-bg{
+    margin-top: 80px;
+}
 }

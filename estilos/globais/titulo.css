@@ -1,0 +1,21 @@
+@import 'uteis.css';
+
+.titulo-bg{
+    background-color: var(--c11);
+}
+.titulo{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.titulo h4{
+    font: var(--font-2-mg-b);
+    color: var(--c5);
+    padding: 60px 0px 4px 0px;
+}
+.titulo h1{
+    font: var(--font-1-gg);
+    color: var(--w);
+    padding-bottom: 60px;
+}

@@ -1,0 +1,46 @@
+@import '../../globais/uteis.css';
+
+.header-menu #bicicletas a::after{
+    display: block;
+}
+.header-menu #bicicletas::after{
+    display: none;
+}
+.bicicletas-bg{
+    margin: 120px 0;
+}
+.bicicleta-modelo{
+    max-width: 1200px;
+    margin: 60px auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+}
+.bicicleta-modelo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.bicicleta-info h2{
+    font: var(--font-1-g);
+    color: var(--c11);
+    margin-bottom: 20px;
+}
+.bicicleta-info p{
+    font: var(--font-2-m);
+    color: var(--c8);
+    margin-bottom: 32px;
+}
+.destaque h2{
+    color: var(--c1);
+}
+.destaque p{
+    color: var(--c5);
+}
+.fundo-preto{
+    padding: 30px 0px;
+    background-image: linear-gradient(to right, white 30%, var(--c11) 30%);
+}

@@ -1,4 +1,4 @@
-@import 'uteis.css';
+@import '../globais/uteis.css';
 
 .diferencial-bg{
     background-color: var(--p);
@@ -28,13 +28,22 @@
 .diferencial-info .principal{
     font: var(--font-2-mg);
     color: var(--c5);
+    margin-top: 32px;
 }
 .diferencial-info .link{
     text-decoration: none;
     display: block;
     color: var(--p1);
     font: var(--font-1-mg);
-    margin: 48px 0px 80px 0px;
+    margin: 48px 0px 72px 0px;
+}
+.diferencial-info .link::after{
+    content: '';
+    display: block;
+    width: 260px;
+    height: 4px;
+    background-color: var(--p1);
+    margin-top: 4px;
 }
 .diferencial-info .descricao-diferencial{
     font: var(--font-2-p);
@@ -62,4 +71,43 @@
     object-fit: cover;
     object-position: left;
     border-radius: 4px;
+}
+
+@media (max-width:1200px){
+.diferencial-info h4{
+    font: var(--font-2-m);
+    font-weight: 500;
+}
+.diferencial-info h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}   
+.diferencial-info .principal{
+    font: var(--font-2-m);
+    margin-top: 1rem;
+}
+.diferencial-info .link{
+    font: var(--font-1-m);
+    margin: 36px 0px 60px 0px;
+}
+.diferencial-info .link::after{
+    display: block;
+    width: 192px;
+    height: 2px;
+}
+.diferencial-info .diferenciais h2{
+    font: var(--font-1-m);
+}
+.diferencial-info .descricao-diferencial{
+    font: var(--font-2-pp);
+}
+}
+
+@media (max-width:800px){
+.diferencial{
+    grid-template-columns: 1fr;
+}
+.diferencial img{
+    display: none;
+}
 }

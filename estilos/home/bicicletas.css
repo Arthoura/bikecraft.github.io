@@ -1,4 +1,4 @@
-@import 'uteis.css';
+@import '../globais/uteis.css';
 
 .bicicletas{
     grid-template-columns: 1fr 1fr 1fr;
@@ -25,7 +25,6 @@
     margin-top: 1rem;
     align-items: center;
 }
-
 .bicicleta h3::before{
     content: '';
     display: inline-block;
@@ -42,4 +41,35 @@
     font: var(--font-2-m);
     color: var(--c8);
     margin-top: .5rem;
+}
+
+@media (max-width:1200px){
+.bicicletas{
+    margin-bottom: 60px;
+}
+.bicicletas-bg h1{
+    margin: 80px auto 40px auto;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+.bicicleta h3{
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font: var(--font-1-m);
+}
+.bicicleta h6{
+    font: var(--font-2-pp);
+    margin-top: 0.25rem;
+}
+}
+
+@media (max-width:800px){
+.bicicletas-bg h1{
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+.bicicletas{
+    margin-bottom: 0px;
+}
 }

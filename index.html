@@ -10,17 +10,16 @@
 <body>
     <header class = "header-bg">
         <div class = "header flex">
-            <a href="./index.html"><img src="imagens/originais/icones/gerais/logo.svg" alt="Bikcraft"></a>
+            <a href="./index.html" target="_self"><img src="imagens/originais/icones/gerais/logo.svg" alt="Bikcraft"></a>
             <nav>
                 <ul class = "header-menu flex">
-                    <li><a href="">Bicicletas</a></li>
-                    <li><a href="">Seguros</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li id = "bicicletas"><a href="páginas/bicicletas.html">Bicicletas</a></li>
+                    <li id = "seguros"><a href="#seguros">Seguros</a></li>
+                    <li id = "contato"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
         <!--Seção que contém a introdução-->
         <section class = "intro-bg">
@@ -30,12 +29,14 @@
                     <p>Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft. </p>
                     <a href="#" class = "btn">SELECIONE A SUA</a>
                 </div>
-                <img src="imagens/originais/gerais/img-intro.jpg" alt="bicicleta preta modelo Nimbus stark">
+                <picture>
+                    <source media="(max-width:800px)" srcset="imagens\reduzidas\bicicletas\nimbus.jpg">
+                    <img src="imagens/originais/gerais/img-intro.jpg" alt="bicicleta preta modelo Nimbus stark">
+                </picture>
             </div>
         </section>
-
        <!--Seção que contém as bicicletas-->
-        <section class = "bicicletas-bg">
+        <section class = "bicicletas-bg" id = "bicicletas">
             <h1>escolha a sua<span class = "ponto-final">.</span></h1>
             <ul class = "bicicletas grid">
                 <li class = "bicicleta" id = "bicicleta1">
@@ -61,7 +62,6 @@
                 </li>
             </ul>
         </section>
-
         <!--Seção que contém o diferencial-->
         <section class = "diferencial-bg">
             <div class = "diferencial grid">
@@ -81,10 +81,9 @@
                         </div>
                     </div>
                 </div>
-                <div><img src="imagens/reduzidas/gerais/ferramentas.jpg" alt="Ferramentas utilizadas na construção das bicicicletas Bikcrafts"></div>
+                <img src="imagens/reduzidas/gerais/ferramentas.jpg" alt="Ferramentas utilizadas na construção das bicicicletas Bikcrafts">
             </div>
         </section>        
-
         <!--Seção que contém os parceiros-->
         <section class = "parceiros-bg">
             <h1>nossos parceiros<span class = "ponto-final">.</span></h1>
@@ -100,8 +99,7 @@
                     <li><img src="imagens/originais/parceiros/wildbeast.svg" alt="Wildbeast"></li>
                 </ul>
             </div>
-        </section>
-        
+        </section>  
         <!--Seção que contém o depoimento-->
         <section class = "depoimento-bg grid">
             <img src="imagens/reduzidas/gerais/depoimento.jpg" alt="Mulher pedalando">
@@ -113,9 +111,8 @@
                 </div>
             </div>
         </section>
-
        <!--Seção que contém os seguros-->
-        <section class = "seguros-bg">
+        <section class = "seguros-bg" id = "seguros">
             <h1>seguros<span class = "ponto-final">.</span></h1>
             <div class = "seguros-planos grid">
                 <div class = "planos-prata plano">
@@ -150,8 +147,7 @@
             </div>
         </section>
     </main>
-
-    <footer class = "footer-bg">
+    <footer class = "footer-bg" id = "contato">
         <div class = "footer grid">
             <a href="#"><img src="imagens/originais/icones/gerais/logo.svg" alt="Bikcraft"></a>
 

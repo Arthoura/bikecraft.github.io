@@ -1,4 +1,4 @@
-@import 'uteis.css';
+@import '../globais/uteis.css';
 
 .parceiros-bg h1{
     margin-bottom: 120px;
@@ -12,27 +12,50 @@
 }
 .parceiros-lista ul{
     max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 100px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .parceiros-lista li{
         display: flex;
         padding: 32px;
         border-left: 2px solid var(--c2);
 }
-
 .parceiros-lista li:nth-child(n + 5) {
     border-top: 2px solid var(--c2);
 }
-
 .parceiros-lista li:first-child, 
 .parceiros-lista li:nth-child(5){
     border-left: none;
 }
-
 .parceiros-lista img{
     margin: auto;
+}
+
+
+@media (max-width:1200px){
+.parceiros-bg h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+}
+
+@media (max-width:800px){
+.parceiros-lista ul{
+    grid-template-columns: 1fr 1fr;
+}
+.parceiros-lista li:nth-child(n + 3) {
+    border-top: 2px solid var(--c2);
+}
+.parceiros-lista li {
+    border-left: none;
+}
+.parceiros-lista li:nth-child(2n) {
+    border-left: 2px solid var(--c2);
+}
+.parceiros-bg h1{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
 }

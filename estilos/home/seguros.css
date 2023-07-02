@@ -1,4 +1,4 @@
-@import 'uteis.css';
+@import '../globais/uteis.css';
 
 .seguros-bg{
     background-color: var(--c11);

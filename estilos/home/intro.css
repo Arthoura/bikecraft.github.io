@@ -1,4 +1,4 @@
-@import 'uteis.css';
+@import '../globais/uteis.css';
 
 .intro-bg{
     background-color: var(--p);
@@ -14,29 +14,72 @@
 .intro{
     grid-template-columns: 1fr 1fr;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0px 20px;
     box-sizing: border-box;
     gap: 40px;
 }
+.intro::after{
+    content: url('../../imagens/originais/icones/decoradores/cinza/bottom-left-cinza.svg');
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+}
 .intro-descricao{
     align-self: center;
+    margin-bottom: 70px;
 }
 .intro-descricao h1{
     color: var(--w);
     font: var(--font-1-gg);
-    max-width: 528px;
 }
 .intro-descricao p{
     margin-top: 2rem;
     color: var(--c5);
     font: var(--font-2-mg);
-    max-width: 528px;
 }
 .intro img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+}
+@media (max-width:1200px){
+.intro-descricao h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+.intro-descricao p{
+    margin-top: 1rem;
+    font: var(--font-2-p);
+}
+.intro::after{
+    bottom: 100px;
+}
+}
+@media (max-width:950px){
+    .intro::after{
+        display: none;
+    }
+}
+@media (max-width:800px){
+.intro-bg{
+    background-color: var(--c11);
+}
+.intro{
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+}
+.intro-descricao{
+    margin-bottom: 20px;
+}
+.intro img{
+    width: 100%;
+    height: 300px;
+}
+.intro-descricao h1{
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
 }
