@@ -19,3 +19,11 @@
     color: var(--w);
     padding-bottom: 60px;
 }
+@media (max-width:650px){
+    .titulo h4{
+        font: var(--font-2-p);
+    }
+    .titulo h1{
+        font: var(--font-1-g);
+    }
+}

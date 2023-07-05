@@ -6,8 +6,8 @@
 .header-menu #bicicletas::after{
     display: none;
 }
-.bicicletas-bg{
-    margin: 120px 0;
+.titulo-bg{
+    margin-bottom: 120px;
 }
 .bicicleta-modelo{
     max-width: 1200px;
@@ -16,7 +16,6 @@
     padding: 0px 20px;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-
 }
 .bicicleta-modelo img{
     width: 100%;
@@ -24,15 +23,72 @@
     object-fit: cover;
     border-radius: 5px;
 }
+.img-bike{
+    position: relative;
+}
+.img-bike::after{
+    content: 'R$ 4999';
+    font: var(--font-2-m);
+    color: var(--w);
+    padding: 8px 16px 8px 8px;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--p);
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.magic::after{
+    content: 'R$ 2499';
+}
+.nebula::after{
+    content: 'R$ 4499';
+}
 .bicicleta-info h2{
     font: var(--font-1-g);
     color: var(--c11);
     margin-bottom: 20px;
+    position: relative;
+}
+.vantagens li, .vantagens-preto li{
+    font:var(--font-1-m);
+    color: var(--c8);
+    margin-bottom: 1rem;
+}
+.vantagens-preto li{
+    color: var(--c5);
+}
+.vantagem-btn{
+    grid-template-columns: 1fr 1fr;
+}
+.vantagem-btn a{
+    justify-self: end;
+    align-self: end;
+}
+.vantagem-btn img{
+    width: 24px;
+    margin-right: 8px;
+}
+.bicicleta-info{
+    position: relative;
+}
+.bicicleta-info::before{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/top-right-cinza.svg');
+    position: absolute;
+    right: 0px;
+}
+.bicicleta-info h2::before{
+    content:'';
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    display: block;
+    margin-bottom: 8px;
 }
 .bicicleta-info p{
     font: var(--font-2-m);
     color: var(--c8);
     margin-bottom: 32px;
+    max-width: 450px;
 }
 .destaque h2{
     color: var(--c1);
@@ -41,6 +97,38 @@
     color: var(--c5);
 }
 .fundo-preto{
-    padding: 30px 0px;
+    padding: 1px 0px;
     background-image: linear-gradient(to right, white 30%, var(--c11) 30%);
+}
+@media (max-width:1000px){
+.bicicleta-modelo{
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+.bicicleta-info h2{
+    position: relative;
+}
+.bicicleta-info h2::before{
+    display: inline-block;
+    margin-right: 8px;
+}
+.vantagem-btn{
+    grid-template-columns: 1fr;
+}
+.vantagem-btn a{
+    justify-self: start;
+}
+.fundo-preto{
+    background-image: linear-gradient(to right, var(--c11) 100%, var(--w) 30%);
+}
+}
+@media (max-width:800px){
+    .header-menu #bicicletas a::after{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    .bicicleta-info::before{
+        display: none;
+    }
 }

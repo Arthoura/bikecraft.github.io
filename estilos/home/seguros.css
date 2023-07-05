@@ -68,3 +68,55 @@
 .plano .btn{
     margin-bottom: 32px;
 }
+
+
+/* Media queries */
+@media (max-width:1200px){
+.seguros-bg h1{
+font-size: 2.5rem;
+line-height: 3rem;
+padding-top: 100px;
+padding-bottom: 40px;
+}
+}
+@media (max-width:900px){
+.plano .preço{
+    font: var(--font-1-mg);
+    color: var(--w);
+}
+.plano h4::after{
+    font-size: 0.75rem;
+}
+}
+@media (max-width:800px){
+.seguros-bg h1{
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+.seguros-planos{
+    grid-template-columns: 1fr;
+    max-width: 600px;  
+    margin-left: 0px;
+}
+.plano{
+    margin-bottom: 20px;
+}
+}
+@media (max-width:450px){
+.plano{
+    padding: 16px 16px 0px 30px;
+}
+.plano li{
+    font: var(--font-2-p);
+    margin-bottom: 10px;
+}
+.planos-prata h3{
+    font: var(--font-1-mg);
+}
+.planos-ouro h3{
+    font: var(--font-1-mg);
+}
+.plano .nome-preço{
+    margin-bottom: 0;
+}
+}

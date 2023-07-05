@@ -49,12 +49,13 @@
 .footer .redes-sociais{
     gap:40px;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 
 /* media queries */
 @media (max-width:800px){
-    .footer img{
+    .footer .home-btn{
         display: none;
     }
     .footer{
