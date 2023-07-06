@@ -31,6 +31,9 @@
 .footer a{
     color:var(--c5)
 }
+.footer a:hover{
+    color:var(--w)
+}
 .footer-contato p{
     margin-top: 28px;
     font: var(--font-2-mf);

@@ -76,6 +76,13 @@ img{
     background: var(--gradiente, linear-gradient(180deg, #0B49E5 0%, #221FCC 100%));
     color: var(--w);
     font: var(--font-1-m-b);
+    transition: .2s;
+    border:1px solid transparent;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background: var(--gradiente, linear-gradient(180deg, #1956f1, #3431e8));
+    border: 1px solid var(--c5)
 }
 .ponto-final{
     color: var(--p1);

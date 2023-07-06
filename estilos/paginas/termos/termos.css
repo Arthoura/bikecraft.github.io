@@ -1,0 +1,23 @@
+@import '../../globais/uteis.css';
+@import '../../globais/header.css';
+@import '../../globais/footer.css';
+@import '../../globais/titulo.css';
+
+.termos-condicoes{
+    max-width: 1200px;
+    margin: 120px auto;
+}
+.principal > li{
+    font: var(--font-1-mg);
+    color: var(--c11);
+    margin-bottom: 16px;
+}
+.secundario > li{
+    font: var(--font-2-m);
+    color: var(--c10);
+    margin-bottom: 16px;
+    max-width: 760px;
+}
+.secundario{
+    margin-bottom: 48px;
+}

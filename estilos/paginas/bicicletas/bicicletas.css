@@ -1,4 +1,7 @@
 @import '../../globais/uteis.css';
+@import '../../globais/header.css';
+@import '../../globais/footer.css';
+@import '../../globais/titulo.css';
 
 .header-menu #bicicletas a::after{
     display: block;
