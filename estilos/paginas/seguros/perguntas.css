@@ -1,0 +1,48 @@
+@import '../../globais/uteis.css';
+
+.perguntas-bg{
+    background-color: var;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.perguntas li{
+    position: relative;
+}
+.perguntas li::after{
+    content: url('../../../imagens/originais/icones/gerais/lista-suspensa.svg');
+    position: absolute;
+    top:30px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+.perguntas-bg h1{
+    font: var(--font-1-gg);
+    margin-bottom: 40px;
+}
+.perguntas li{
+    padding: 20px 40px;
+}
+.perguntas li:nth-child(odd){
+    background-color: var(--c1);
+}
+.perguntas h5{
+    font: var(--font-1-m);
+    color: var(--c11);
+    margin-bottom: 1rem;
+    position: relative;
+}
+.perguntas h5::before{
+    content: "";
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    position: absolute;
+    top: 8px;
+    left: -20px;
+
+}
+.perguntas p{
+    font: var(--font-2-m);
+    color: var(--c9 );
+    max-width: 720px;
+}

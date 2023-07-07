@@ -3,12 +3,6 @@
 @import '../../globais/footer.css';
 @import '../../globais/titulo.css';
 
-.header-menu #bicicletas a::after{
-    display: block;
-}
-.header-menu #bicicletas::after{
-    display: none;
-}
 .titulo-bg{
     margin-bottom: 120px;
 }
@@ -124,11 +118,6 @@
 .fundo-preto{
     background-image: linear-gradient(to right, var(--c11) 100%, var(--w) 30%);
 }
-}
-@media (max-width:800px){
-    .header-menu #bicicletas a::after{
-        display: none;
-    }
 }
 @media (max-width:600px){
     .bicicleta-info::before{

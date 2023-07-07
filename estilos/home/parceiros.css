@@ -3,12 +3,6 @@
 .parceiros-bg h1{
     margin-bottom: 120px;
     margin-top: 120px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px;
-    box-sizing: border-box;
-    font: var(--font-1-gg);
 }
 .parceiros-lista ul{
     max-width: 1400px;
@@ -32,13 +26,6 @@
 }
 
 
-@media (max-width:1200px){
-.parceiros-bg h1{
-    font-size: 2.5rem;
-    line-height: 3rem;
-}
-}
-
 @media (max-width:800px){
 .parceiros-lista ul{
     grid-template-columns: 1fr 1fr;
@@ -55,7 +42,5 @@
 .parceiros-bg h1{
     margin-bottom: 40px;
     margin-top: 20px;
-    font-size: 2rem;
-    line-height: 2.25rem;
 }
 }

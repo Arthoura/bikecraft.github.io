@@ -4,19 +4,11 @@
     background-color: var(--c11);
 }
 .seguros-bg h1{
-    max-width: 1200px;
-    box-sizing: border-box;
     padding: 60px 20px;
-    margin: 0px auto;
-    font: var(--font-1-gg);
     color: var(--w);
 }
 .seguros-planos{
     grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 0px auto;
-    padding: 0px 20px;
     gap: 40px;
     align-items: center;
 }
@@ -71,14 +63,6 @@
 
 
 /* Media queries */
-@media (max-width:1200px){
-.seguros-bg h1{
-font-size: 2.5rem;
-line-height: 3rem;
-padding-top: 100px;
-padding-bottom: 40px;
-}
-}
 @media (max-width:900px){
 .plano .preço{
     font: var(--font-1-mg);
@@ -89,10 +73,6 @@ padding-bottom: 40px;
 }
 }
 @media (max-width:800px){
-.seguros-bg h1{
-    font-size: 2rem;
-    line-height: 2.25rem;
-}
 .seguros-planos{
     grid-template-columns: 1fr;
     max-width: 600px;  

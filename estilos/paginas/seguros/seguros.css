@@ -1,0 +1,54 @@
+@import '../../globais/uteis.css';
+@import '../../globais/header.css';
+@import '../../globais/footer.css';
+@import '../../globais/titulo.css';
+@import 'vantagens.css';
+@import 'perguntas.css';
+
+.seguros-bg{
+    background-color: var(--c11);
+}
+.seguros{
+    padding: 60px 20px 120px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.plano{
+    padding: 32px 32px 32px 64px;
+}
+.plano .btn{
+    margin-top: 12px;
+}
+.nome-preco{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.prata, .ouro{
+    background-color: var(--p);
+    border-radius: 5px;
+}
+.prata .nome-preco h3{
+    font: var(--font-1-g);
+    color: var(--c6);
+}
+.prata .btn{
+    background: var(--c10);
+    color: var(--c4);
+}
+.ouro .nome-preco h3{
+    font: var(--font-1-g);
+    color: var(--p1);
+}
+.nome-preco h4{
+    font: var(--font-1-g);
+    color: var(--w);
+}
+.vantagens-plano li{
+    font: var(--font-2-m);
+    color: var(--w);
+    margin-bottom: 20px;
+    margin-right: 8px;
+    list-style-image: url('../../../imagens/originais/icones/gerais/item-list.svg');
+}

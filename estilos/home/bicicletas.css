@@ -3,17 +3,11 @@
 .bicicletas{
     grid-template-columns: 1fr 1fr 1fr;
     gap:40px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px;
+    max-width: 1400px !important;
+    margin-bottom: 80px;
 }
 .bicicletas-bg h1{
-    max-width: 1200px;
-    margin: 240px auto 40px auto;
-    box-sizing: border-box;
-    padding-left: 20px;
-    font: var(--font-1-gg);
+    margin: 120px auto 40px auto;
 }
 .bicicleta img{
     border-radius: 5px;
@@ -65,10 +59,6 @@
 }
 
 @media (max-width:800px){
-.bicicletas-bg h1{
-    font-size: 2rem;
-    line-height: 2.25rem;
-}
 .bicicletas{
     margin-bottom: 0px;
 }

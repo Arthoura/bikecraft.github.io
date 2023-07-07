@@ -1,0 +1,26 @@
+@import '../../globais/uteis.css';
+
+.vantagens-bg{
+    background-color: var(--p);
+    padding: 60px 20px 120px 20px;
+}
+.vantagens-bg h1{
+    font: var(--font-1-gg);
+    margin-bottom: 48px;
+    color: var(--w);
+}
+.vantagens ul{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    row-gap: 64px;
+}
+.vantagem-item h5 {
+    font: var(--font-1-mg);
+    color: var(--w);
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.vantagem-item p {
+    font: var(--font-2-m);
+    color: var(--c6);  
+}

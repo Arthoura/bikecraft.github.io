@@ -87,3 +87,26 @@ img{
 .ponto-final{
     color: var(--p1);
 }
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.titulo{
+    font: var(--font-1-gg);
+}
+
+@media (max-width:1200px){
+    .titulo{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+@media (max-width:800px){
+    .titulo{
+    font-size: 2rem;
+    line-height: 2.25rem;
+    }
+}
