@@ -62,4 +62,20 @@
 .bicicletas{
     margin-bottom: 0px;
 }
+
+}
+@media (max-width:500px){
+.bicicletas{
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+    gap: 20px;
+}
+.bicicletas img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.bicicleta-preço{
+    margin-bottom: 0px;
+}
 }

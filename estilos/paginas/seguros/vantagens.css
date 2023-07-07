@@ -5,7 +5,6 @@
     padding: 60px 20px 120px 20px;
 }
 .vantagens-bg h1{
-    font: var(--font-1-gg);
     margin-bottom: 48px;
     color: var(--w);
 }
@@ -23,4 +22,28 @@
 .vantagem-item p {
     font: var(--font-2-m);
     color: var(--c6);  
+}
+
+@media (max-width:800px){
+    .vantagem-item h5{
+        font: var(--font-1-p);
+    }
+    .vantagem-item p {
+        font: var(--font-2-pp);
+    }
+    .vantagens ul{
+        gap: 40px;
+        row-gap: 32px;
+    }
+}
+
+@media (max-width:700px){
+    .vantagens ul{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:500px){
+    .vantagens ul{
+        grid-template-columns: 1fr;
+    }
 }

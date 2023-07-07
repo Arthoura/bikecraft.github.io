@@ -16,7 +16,6 @@
     transform: rotate(180deg);
 }
 .perguntas-bg h1{
-    font: var(--font-1-gg);
     margin-bottom: 40px;
 }
 .perguntas li{
