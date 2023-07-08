@@ -7,12 +7,19 @@
 
 .seguros-bg{
     background-color: var(--c11);
+    position: relative;
 }
 .seguros{
     padding: 60px 20px 120px 20px;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
+}
+.seguros-bg::after{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/bottom-left-cinza.svg');
+    position: absolute;
+    left:40px;
+    bottom:40px;
 }
 .plano{
     padding: 32px 32px 32px 64px;

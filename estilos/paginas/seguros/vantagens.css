@@ -3,6 +3,13 @@
 .vantagens-bg{
     background-color: var(--p);
     padding: 60px 20px 120px 20px;
+    position: relative;
+}
+.vantagens-bg::after{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/bottom-left-cinza.svg');
+    position: absolute;
+    left:40px;
+    bottom:40px;
 }
 .vantagens-bg h1{
     margin-bottom: 48px;
@@ -36,7 +43,6 @@
         row-gap: 32px;
     }
 }
-
 @media (max-width:700px){
     .vantagens ul{
         grid-template-columns: 1fr 1fr;
