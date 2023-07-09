@@ -58,18 +58,25 @@
                         </div>
                     </div>
                 </div>
-                <div class = "formulario">
-                    <div class = "nome-fone flex">
+                <form class = "formulario grid">
                         <div class = "nome">
                             <label for="inome">Nome</label>
-                            <input type="text" name="Nome" id="inome">
+                            <input type="text" name="Nome" class = "campo" id="inome" placeholder="Seu nome completo">
                         </div>
                         <div class = "fone">
                             <label for="ifone">Telefone</label>
-                            <input type="text" name="fone" id="ifone">
+                            <input type="text" name="fone" class = "campo" id="ifone" placeholder="(xx) x xxxx-xxxx">
                         </div>
-                    </div>
-                </div>
+                        <div class = "mail">
+                            <label for="imail">Email</label>
+                            <input type="text" name="mail" class = "campo" id="imail" placeholder="contato@email.com">
+                        </div>
+                        <div class = "msg">
+                            <label for="imsg">Mensagem</label>
+                            <textarea rows="5" name="msg" id="imsg">
+                            </textarea>
+                        </div>
+                </form>
             </div>
         </section>
 
