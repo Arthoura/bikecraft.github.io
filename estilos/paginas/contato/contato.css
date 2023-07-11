@@ -3,15 +3,28 @@
 @import '../../globais/footer.css';
 @import '../../globais/titulo.css';
 
+.box-contato{
+    grid-template-columns: 5fr 7fr;
+    padding: 0px;
+}
 .contato-bg{
     background-color: var(--c11);
-    box-shadow: inset 0 -260px white;
+    box-shadow: inset 0 -260px var(--c1); /*Dá a impressão que o conteúdo está "estourando" a div*/
 }
 .contato{
     background-color: var(--p);
     color: var(--w);
     padding: 60px;
     border-radius: 5px 0px 0px 5px;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+.contato::after{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/bottom-left-cinza.svg');
+    left: 40px;
+    bottom: 40px;
+    position: absolute;
+
 }
 .contato h3{
     font: var(--font-1-p-b);
@@ -36,15 +49,19 @@
 .contatos img{
     margin-right: 8px;
 }
-.box-contato{
-    grid-template-columns: 5fr 7fr;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
-}
 .redes-sociais{
     margin-top: 60px;
 }
 .redes-sociais img{
     margin-right: 32px;
+    transition: .3s;
+}
+.redes-sociais img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+form{
+    margin-bottom: 0px; /*Por padrão, o form já vem com um margin bottom de 16px. Tirei ele*/
 }
 .formulario{
     grid-template-columns: 1fr 1fr;
@@ -53,20 +70,36 @@
     border-radius: 0px 5px 5px 0px;
     align-content: start;
     gap:20px;
+    position: relative;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+.formulario::after{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/bottom-right-cinza.svg');
+    right: 40px;
+    bottom: 40px;
+    position: absolute;
+
 }
 label{
     font: var(--font-1-p);
-    display: block;
+    display: block; /*Faço isso para que o label do input não fique na mesma linha que a caixa*/
     margin-bottom: 4px;
 }
 .campo{
-    width: 100%;
+    width: 100%; /*Faz com que a caixa do input ocupe toda a largura do grid*/
     height: 48px;
     border-radius: 5px;
     background-color: var(--c1);
     border: 1px solid var(--c2);
     font: var(--font-2-p);
 }
+.botao{
+    grid-column: span 2;
+}
+.btn{
+    margin-top: 0px;
+}
+/*Alterações na caixa do input da mensagem*/
 textarea{
     width: 100%;
     border-radius: 5px;
@@ -75,13 +108,143 @@ textarea{
     font: var(--font-2-p);
 }
 .mail, .msg{
-    grid-column: span 2;
+    grid-column: 1/-1; /*Faz com que as caixas do email e da mensagem ocupem duas linhas do grid*/
 }
+/*Alterações a serem feitas nas caixas que estão selecionadas no momento*/
 input:focus, textarea:focus{
     border: 3px solid var(--p1);
     box-shadow:  0 0 0 0;
     outline:0;
 }
+
+/* Estilo da parte das lojas */
 .lojas-bg{
-padding: 200px;
+    background-color: var(--c1);
+    padding: 120px 0;
+}
+.loja-1, .loja-2{
+    background-color: var(--w);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+.lojas{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 60px;
+}
+.lojas .cidade{
+    font: var(--font-1-g);
+    position: relative;
+}
+.lojas .cidade::before{
+    content: '';
+    width: 12px;
+    height: 8px;
+    background-color: var(--p1);
+    position: absolute;
+    left: -24px;
+    top: 16px;
+}
+.lojas .loja-info{
+    padding: 32px 60px;
+}
+.lojas .horario{
+    font: var(--font-1-p-b);
+    position: relative;
+}
+.lojas .horario::before{
+    content: url('../../../imagens/originais/icones/gerais/horario.svg');
+    position: absolute;
+    left: -28px;
+    top: 1px;
+}
+.lojas .localizacao-contato{
+    grid-template-columns: 1fr 1fr;
+    margin: 32px 12px;
+    gap: 60px;
+    font: var(--font-1-p);
+    color: var(--c8);
+}
+.lojas .localizacao-contato h4{
+    line-height: 2rem;
+}
+.loja-localizacao, .loja-contato{
+    position: relative;
+}
+.loja-localizacao::before{
+    content: '';
+    width: 2px;
+    height: 64px;
+    left: -14px;
+    background-color: var(--c2);
+    position: absolute;
+}
+.loja-contato::before{
+    content: '';
+    width: 2px;
+    height: 64px;
+    left: -12px;
+    background-color: var(--c2);
+    position: absolute;
+}
+@media (max-width:1200px){
+.lojas .localizacao-contato{
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.loja-localizacao::before{
+    left: -12px;
+}
+.loja-contato::before{
+    left: -12px;
+}
+}
+
+@media (max-width:900px){
+    .contato{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contato h3{
+        grid-column: 1/-1;
+        font: var(--font-1-mg);
+    }
+    .contatos li{
+        margin-bottom: 12px;
+    }
+    .contato::after{
+        display: none;
+    }
+    .redes-sociais{
+        margin-top: 32px;
+    }
+    .box-contato{
+        grid-template-columns: 1fr;
+    }
+    .lojas{
+        grid-template-columns: 0.8fr;
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px){
+    .contato{
+        grid-template-columns: 1fr;
+    }
+    .contato .contatos{
+        margin-right: 60px;
+    }
+    .contato h3{
+        justify-self: center;
+    }
+    .formulario{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .formulario::after{
+        display: none;
+    }
 }

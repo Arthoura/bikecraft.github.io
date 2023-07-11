@@ -35,7 +35,7 @@
     color: var(--c5);
     position: relative;
 }
-.footer-contato p::after{
+.footer-contato p::after{ /* Linhas decoradoras que separam os dados de contato*/
     content: '';
     position: absolute;
     bottom: -15px;

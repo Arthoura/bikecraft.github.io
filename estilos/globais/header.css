@@ -4,7 +4,7 @@
     padding: 32px 0px;
 }
 .header{
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -21,14 +21,14 @@
 .header-menu li{
     position: relative;
 }
-.header-menu li::after{
+.header-menu li::after{ /* Decorador que ficará embaixo dos itens de navegação quando passarmos o mouse */
     content: '';
     display: block;
     position: absolute;
     width: 0px;
     margin-top: 4px;
     height: 2px;
-    transition: .3s;
+    transition: .3s ease-out;
 }
 .header-menu li:hover::after{
     background-color: #d9d9d9;
