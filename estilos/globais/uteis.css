@@ -83,7 +83,6 @@ img{
 }
 .btn:hover{
     transform: scale(1.1);
-    background: var(--gradiente, linear-gradient(180deg, #1956f1, #3431e8));
     border: 1px solid var(--c5)
 }
 .ponto-final{
@@ -99,7 +98,32 @@ img{
 .titulo{
     font: var(--font-1-gg);
 }
-
+.campo{
+    width: 100%; /*Faz com que a caixa do input ocupe toda a largura do grid*/
+    height: 48px;
+    border-radius: 5px;
+    background-color: var(--c1);
+    border: 1px solid var(--c2);
+    font: var(--font-2-p);
+}
+label{
+    font: var(--font-1-p);
+    display: block; /*Faço isso para que o label do input não fique na mesma linha que a caixa*/
+    margin-bottom: 4px;
+}
+textarea{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--c1);
+    border: 1px solid var(--c2);
+    font: var(--font-2-p);
+}
+/*Alterações a serem feitas nas caixas que estão selecionadas no momento*/
+input:focus, textarea:focus{
+    border: 3px solid var(--p1);
+    box-shadow:  0 0 0 0;
+    outline:0;
+}
 @media (max-width:1200px){
     .titulo{
         font-size: 2.5rem;

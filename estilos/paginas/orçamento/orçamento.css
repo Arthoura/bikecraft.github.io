@@ -1,0 +1,124 @@
+@import '../../globais/uteis.css';
+@import '../../globais/header.css';
+@import '../../globais/footer.css';
+@import '../../globais/titulo.css';
+
+.orçamento-bg{
+    background-color: var(--c11);
+    box-shadow: inset 0 -760px var(--c1);
+    padding-bottom: 120px;
+}
+.orçamento{
+    grid-template-columns: 5fr 7fr;
+}
+.orçamento h5{
+    position: relative;
+}
+.orçamento h5::before{
+    content: '';
+    width: 4px;
+    height: 8px;
+    background: var(--gradiente, linear-gradient(180deg, #0B49E5 0%, #221FCC 100%));
+    position: absolute;
+    left: -12px;
+    top: 4px;
+}
+label{
+    display: inline-block;
+}
+.escolha-opcao{
+    background-color: var(--p);
+    padding: 64px 60px;
+    border-radius: 5px 0px 0px 5px;
+}
+.escolha-opcao h5{
+    font: var(--font-1-pp);
+    color: var(--c5);
+    margin-bottom: 24px;
+}
+.opcao{
+    display: inline-block;
+    margin-right: 20px;
+}
+.opcao input{
+    display: none;
+}
+.opcao label{
+    font: var(--font-1-p);
+    line-height: 1rem;
+    color: var(--c4);
+    background-color: var(--c10);
+    padding: 16px 60px 16px 16px;
+    border-radius: 5px;
+}
+.opcao label::before{
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--c6);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+fieldset{
+    background-color: var(--c10);
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+}
+.opcao input[type="radio"]:checked + label{
+    background-color: white;
+    color: var(--c11);
+}
+.formularios, .escolha-opcao{
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+
+
+
+/* CSS para a parte dos formulários */
+.formularios{
+    background-color: var(--w);
+    padding: 64px 72px;
+    border-radius: 0px 5px 5px 0px;
+}
+.termos-condicoes a{
+    color: var(--c11);
+    font: var(--font-1-p);
+    text-decoration: underline;
+}
+.termos-condicoes a:hover{
+    color: var(--c7);
+}
+.formularios h5{
+    font: var(--font-1-pp);
+    color: var(--c9);
+    margin-bottom: 4px;
+}
+.dados-pessoais{
+    margin-bottom: 64px;
+}
+.dados-entrega{
+    margin-bottom: 24px;
+}
+.termos-condicoes{
+    grid-template-columns: 40px 400px;
+    gap: 12px;
+    align-items: center;
+}
+#itermos{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+}
+.column-2{
+    grid-column: span 2;
+}
+.form{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+

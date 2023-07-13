@@ -80,19 +80,6 @@ form{
     position: absolute;
 
 }
-label{
-    font: var(--font-1-p);
-    display: block; /*Faço isso para que o label do input não fique na mesma linha que a caixa*/
-    margin-bottom: 4px;
-}
-.campo{
-    width: 100%; /*Faz com que a caixa do input ocupe toda a largura do grid*/
-    height: 48px;
-    border-radius: 5px;
-    background-color: var(--c1);
-    border: 1px solid var(--c2);
-    font: var(--font-2-p);
-}
 .botao{
     grid-column: span 2;
 }
@@ -100,21 +87,8 @@ label{
     margin-top: 0px;
 }
 /*Alterações na caixa do input da mensagem*/
-textarea{
-    width: 100%;
-    border-radius: 5px;
-    background-color: var(--c1);
-    border: 1px solid var(--c2);
-    font: var(--font-2-p);
-}
 .mail, .msg{
     grid-column: 1/-1; /*Faz com que as caixas do email e da mensagem ocupem duas linhas do grid*/
-}
-/*Alterações a serem feitas nas caixas que estão selecionadas no momento*/
-input:focus, textarea:focus{
-    border: 3px solid var(--p1);
-    box-shadow:  0 0 0 0;
-    outline:0;
 }
 
 /* Estilo da parte das lojas */
