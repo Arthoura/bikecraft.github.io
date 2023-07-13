@@ -114,9 +114,6 @@ fieldset{
     height: 32px;
     border-radius: 5px;
 }
-.column-2{
-    grid-column: span 2;
-}
 .form{
     grid-template-columns: 1fr 1fr;
     gap: 20px;

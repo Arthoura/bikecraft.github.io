@@ -118,6 +118,9 @@ textarea{
     border: 1px solid var(--c2);
     font: var(--font-2-p);
 }
+.column-2{
+    grid-column: span 2;
+}
 /*Alterações a serem feitas nas caixas que estão selecionadas no momento*/
 input:focus, textarea:focus{
     border: 3px solid var(--p1);

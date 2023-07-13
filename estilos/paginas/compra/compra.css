@@ -1,0 +1,59 @@
+@import '../../globais/uteis.css';
+@import '../../globais/footer.css';
+@import '../../globais/header.css';
+@import '../../globais/titulo.css';
+
+.produto-bg{
+    background-color: var(--c11);
+}
+.produto{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.carrossel{
+    gap: 20px;
+}
+.carrossel img{
+    border-radius: 5px;
+}
+.informacoes p{
+    font: var(--font-2-mg);
+    color: var(--c5);
+}
+
+
+
+
+.opcoes h1{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.bikes{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.bikes img{
+    border-radius: 5px;
+}
+.bikes h5{
+    font: var(--font-1-g);
+    color: var(--c11);
+    display: flex;
+    align-items: center;
+}
+.bikes h5::before{
+    content: '';
+    width: 12px;
+    height: 8px;
+    display: inline-block;
+    background-color: var(--p1);
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+.bikes .bike:hover h5::before{
+    width: 24px;   
+}
+.bikes h6{
+    font: var(--font-2-m);
+    color: var(--c8);
+}
