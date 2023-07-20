@@ -11,19 +11,99 @@
     gap: 40px;
 }
 .carrossel{
+    align-self: flex-start;
     gap: 20px;
 }
 .carrossel img{
     border-radius: 5px;
 }
-.informacoes p{
+.informacoes{
+    margin-bottom: 48px;
+}
+.informacoes .descricao{
     font: var(--font-2-mg);
     color: var(--c5);
+    margin-bottom: 2rem;
+}
+.informacoes .btn{
+    margin-top: 0px;
+}
+.informacoes .info-adicional{
+    font: var(--font-1-pp);
+    color: var(--c6);
+    flex-direction: column;
+    gap: 8px;
+}
+.informacoes .btn-estoque{
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+.estimativa-entrega, .estoque{
+    padding: 4px 8px;
+    background-color: var(--p);
+    border-radius: 4px;
+}
+
+.titulo-secao{
+    font: var(--font-1-pp);
+    color: var(--w);
+    margin-bottom: 12px;
+}
+.diferenciais{
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    padding: 32px;
+    background-color: var(--p);
+    row-gap: 32px;
+    margin-bottom: 40PX;
+}
+.diferencial-item .diferencial-titulo{
+    font: var(--font-1-m);
+    color: var(--w);
+    margin-bottom: 8px;
+}
+.diferencial-item .diferencial-descricao{
+    font: var(--font-2-pp);
+    color: var(--c5);
+}
+.diferencial-item img{
+    width: 22px;
+    height: 22px;
+    margin-bottom: 4px;
+}
+
+.ficha{
+background-color: var(--p);
+padding: 32px;
+row-gap: 12px;
+}
+.ficha-item{
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.ficha-item h5{
+    font: var(--font-2-p);
+    color: var(--c4);
+}
+.ficha-item h5:nth-child(2){
+justify-self: end;
+}
+.ficha-item::after{
+    content: '';
+    grid-column: span 2;
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--c11);
 }
 
 
-
-
+/* CSS da seção que terá outras opções de bicicletas para comprar */
+.opcoes{
+    margin-bottom: 200px;
+}
 .opcoes h1{
     margin-top: 60px;
     margin-bottom: 40px;
@@ -56,4 +136,29 @@
 .bikes h6{
     font: var(--font-2-m);
     color: var(--c8);
+}
+
+
+/* CSS da seção que conterá a propaganda para o seguro */
+
+.seguro-bg{
+    background-color: var(--c11);
+    box-shadow: inset 0 120px white, inset 0 -120px var(--p);
+}
+.seguro{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.seguro-img img{
+    border-radius: 5px;
+}
+.seguro-info{
+    margin-top: 180px;
+    color: white;
+}
+.seguro-info p{
+    font: var(--font-2-mg);
+    color: var(--c5);
+    margin-top: 32px;
+    margin-bottom: 24px;
 }
