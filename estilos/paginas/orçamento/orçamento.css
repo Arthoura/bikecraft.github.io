@@ -200,3 +200,56 @@ input:checked + label{
     gap: 20px;
 }
 
+
+@media (max-width:1200px){
+    .escolha-opcao,
+    .formularios{
+        padding: 32px;
+    }
+}
+@media (max-width:900px){
+    .orçamento{
+        grid-template-columns: 1fr;
+    }
+    .escolha-opcao{
+        border-radius: 5px 5px 0 0;
+    }
+    .formularios{
+        border-radius: 0 0 5px 5px;
+    }
+    .orcamento-detalhes{
+        justify-items: center;
+    }
+    .orcamento-detalhes ul{
+        font: var(--font-1-m);
+    }
+    .orcamento-detalhes ul li img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width:600px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+    .form div{
+        grid-column: 1;
+    }
+    .orcamento-detalhes ul{
+        font: var(--font-1-pp);
+    }
+    .orcamento-detalhes ul li img{
+        width: 16px;
+        height: 16px;
+    }
+    .termos-condicoes{
+        display: flex;
+    }
+}
+
+@media (max-width:400px){
+    .escolha-opcao{
+        grid-template-columns: 1fr;
+    }
+}
