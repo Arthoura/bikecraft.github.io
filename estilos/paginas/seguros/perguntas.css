@@ -13,6 +13,9 @@
     position: absolute;
     top:30px;
     right: 20px;
+    transition: .3s;
+}
+.perguntas li:hover::after{
     transform: rotate(180deg);
 }
 .perguntas-bg h1{
@@ -27,8 +30,10 @@
 .perguntas h5{
     font: var(--font-1-m);
     color: var(--c11);
+    font-weight: 900;
     margin-bottom: 1rem;
     position: relative;
+    cursor: pointer;
 }
 .perguntas h5::before{
     content: "";
@@ -43,5 +48,4 @@
 .perguntas p{
     font: var(--font-2-m);
     color: var(--c9 );
-    max-width: 720px;
 }

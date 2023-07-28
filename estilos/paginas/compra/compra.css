@@ -55,7 +55,7 @@
     border-radius: 5px;
     padding: 32px;
     background-color: var(--p);
-    row-gap: 32px;
+    gap: 32px;
     margin-bottom: 40PX;
 }
 .diferencial-item .diferencial-titulo{
@@ -76,11 +76,12 @@
 .ficha{
 background-color: var(--p);
 padding: 32px;
-row-gap: 12px;
 }
 .ficha-item{
     grid-template-columns: 1fr 1fr;
     position: relative;
+    padding: 4px 0px;
+    border-bottom: 1px solid var(--c11);
 }
 .ficha-item h5{
     font: var(--font-2-p);
@@ -88,15 +89,6 @@ row-gap: 12px;
 }
 .ficha-item h5:nth-child(2){
 justify-self: end;
-}
-.ficha-item::after{
-    content: '';
-    grid-column: span 2;
-    position: absolute;
-    top: 29px;
-    width: 100%;
-    height: 1px;
-    background-color: var(--c11);
 }
 
 
@@ -151,6 +143,9 @@ justify-self: end;
 }
 .seguro-img img{
     border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .seguro-info{
     margin-top: 180px;
@@ -161,4 +156,36 @@ justify-self: end;
     color: var(--c5);
     margin-top: 32px;
     margin-bottom: 24px;
+}
+
+
+@media (max-width:800px){
+    .produto{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .titulo h1{
+        padding-bottom: 20px;
+    }
+    .carrossel{
+        grid-row: 2;
+        margin-bottom: 40px;
+    }
+    .informacoes .descricao{
+        font: var(--font-1-p);
+    }
+    .seguro{
+        grid-template-columns: 1fr;
+    }
+    .seguro-info{
+        grid-row: 1;
+    }
+    .seguro-info p{
+        font: var(--font-2-m);
+        margin-top: 12px;
+        margin-bottom: 0px;
+    }
+    .seguro-img{
+        height: 300px;
+    }
 }

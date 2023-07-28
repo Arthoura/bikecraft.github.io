@@ -115,6 +115,9 @@
 .vantagem-btn a{
     justify-self: start;
 }
+.vantagens{
+    grid-template-columns: 1fr 1fr;
+}
 .fundo-preto{
     background-image: linear-gradient(to right, var(--c11) 100%, var(--w) 30%);
 }

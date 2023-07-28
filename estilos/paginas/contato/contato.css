@@ -179,12 +179,11 @@ form{
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-        padding-right: 0;
-        padding-left: 0;
     }
     .contato h3{
-        grid-column: 1/-1;
+        grid-column: span 2;
         font: var(--font-1-mg);
+        margin-bottom: 40px;
     }
     .contatos li{
         margin-bottom: 12px;
@@ -194,6 +193,7 @@ form{
     }
     .redes-sociais{
         margin-top: 32px;
+        grid-column: span 2;
     }
     .box-contato{
         grid-template-columns: 1fr;
@@ -207,18 +207,26 @@ form{
 @media (max-width:500px){
     .contato{
         grid-template-columns: 1fr;
+        padding: 24px;
     }
     .contato .contatos{
         margin-right: 60px;
     }
     .contato h3{
-        justify-self: center;
+        grid-column: 1;
     }
     .formulario{
+        grid-template-columns: 1fr;
         padding-left: 20px;
         padding-right: 20px;
     }
+    .redes-sociais{
+        grid-column: 1;
+    }
     .formulario::after{
         display: none;
+    }
+    .mail, .msg, .botao{
+        grid-column: 1; 
     }
 }

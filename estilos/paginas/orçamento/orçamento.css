@@ -25,59 +25,141 @@
 }
 label{
     display: inline-block;
+    margin-bottom: 0px;
+}
+.orcamento-detalhes{
+    display: none;
+    background-color: var(--w);
+}
+.orcamento-detalhes img{
+    border-radius: 5px;
+}
+.orcamento-detalhes ul{
+    font: var(--font-1-pp);
+    color: var(--c8);
+}
+.orcamento-detalhes ul li{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.orcamento-detalhes ul li img{
+    width: 16px;
+    height: 16px;
 }
 .escolha-opcao{
     background-color: var(--p);
-    padding: 64px 60px;
-    border-radius: 5px 0px 0px 5px;
+    padding: 64px 72px;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
 }
-.escolha-opcao h5{
-    font: var(--font-1-pp);
-    color: var(--c5);
-    margin-bottom: 24px;
-}
-.opcao{
-    display: inline-block;
-    margin-right: 20px;
-}
-.opcao input{
-    display: none;
-}
-.opcao label{
-    font: var(--font-1-p);
-    line-height: 1rem;
+.escolha-opcao label{
+    font: 600 1rem/1.5 "Poppins";
     color: var(--c4);
     background-color: var(--c10);
-    padding: 16px 60px 16px 16px;
-    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
-.opcao label::before{
-    content: "";
+.escolha-opcao label span{
+    display: none;
+}
+.escolha-opcao input:checked + label > span{
+    display: block;
+}
+.escolha-opcao label::before{
+    content: '';
     display: inline-block;
-    box-sizing: border-box;
     width: 12px;
     height: 12px;
     border: 1px solid var(--c6);
     border-radius: 50%;
     margin-right: 8px;
+    box-sizing: border-box;
 }
+.escolha-opcao input:checked + label::before{
+    border: 1px solid var(--c7);
+    box-shadow: inset 0 0 0 3px var(--w), inset 0 0 0 6px var(--c7);
+}
+.escolha-opcao input{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.escolha-opcao > *{
+    grid-column: 1/-1;
+}
+.escolha-opcao > label{
+    grid-column: initial;
+}
+.escolha-opcao input:focus + label{
+    box-shadow: 0 0 0 2px var(--p1);
+    border-color:black;
+}
+.escolha-opcao label:hover{
+background-color: var(--c9);
+}
+.escolha-opcao h5{
+    font: var(--font-1-pp);
+    color: var(--c5);
+}
+
 fieldset{
     background-color: var(--c10);
     height: 44px;
     border: none;
     border-radius: 5px;
 }
-.opcao input[type="radio"]:checked + label{
-    background-color: white;
+input:checked + label{
+    background-color: white !important;
     color: var(--c11);
 }
 .formularios, .escolha-opcao{
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
 }
+.orcamento-conteudo{
+    display: none;
+    margin-top: 24px;
+    gap: 20px;
+}
+.orcamento-conteudo h2{
+    font: var(--font-1-pp);
+    color: var(--c5);
+    position: relative;
+}
+.orcamento-conteudo h2::before{
+    content: '';
+    width: 4px;
+    height: 8px;
+    background: var(--gradiente, linear-gradient(180deg, #0B49E5 0%, #221FCC 100%));
+    position: absolute;
+    left: -12px;
+    top: 4px;
+}
 
+#ibik:checked ~ #orcamento-bikcraft,
+#iseg:checked ~ #orcamento-seguro{
+    display: grid;
+}
 
-
-
+#inimbus:checked ~ #orc-det-nimbus,
+#imagic:checked ~ #orc-det-magic,
+#inebula:checked ~ #orc-det-nebula
+{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 20px;
+   border-radius: 4px;
+   align-items: center;
+   gap: 16px;
+}
 
 /* CSS para a parte dos formulários */
 .formularios{
@@ -96,7 +178,6 @@ fieldset{
 .formularios h5{
     font: var(--font-1-pp);
     color: var(--c9);
-    margin-bottom: 4px;
 }
 .dados-pessoais{
     margin-bottom: 64px;
