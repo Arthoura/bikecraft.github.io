@@ -8,14 +8,14 @@
 .perguntas li{
     position: relative;
 }
-.perguntas li::after{
+.perguntas button::after{
     content: url('../../../imagens/originais/icones/gerais/lista-suspensa.svg');
     position: absolute;
-    top:30px;
+    top:0px;
     right: 20px;
     transition: .3s;
 }
-.perguntas li:hover::after{
+.perguntas button:hover::after{
     transform: rotate(180deg);
 }
 .perguntas-bg h1{
@@ -27,15 +27,19 @@
 .perguntas li:nth-child(odd){
     background-color: var(--c1);
 }
-.perguntas h5{
+.perguntas button{
     font: var(--font-1-m);
     color: var(--c11);
     font-weight: 900;
     margin-bottom: 1rem;
     position: relative;
     cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
 }
-.perguntas h5::before{
+.perguntas button::before{
     content: "";
     width: 12px;
     height: 8px;
@@ -48,4 +52,8 @@
 .perguntas p{
     font: var(--font-2-m);
     color: var(--c9 );
+    display: none;
+}
+.perguntas p.ativa{
+    display: block;
 }

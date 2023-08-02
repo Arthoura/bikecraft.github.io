@@ -55,6 +55,14 @@ label{
     grid-template-columns: 1fr 1fr;
     align-content: start;
     gap: 20px;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+}
+.escolha-opcao::after{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/bottom-left-cinza.svg');
+    position: absolute;
+    left:40px;
+    bottom: 40px;
 }
 .escolha-opcao label{
     font: 600 1rem/1.5 "Poppins";
@@ -166,6 +174,13 @@ input:checked + label{
     background-color: var(--w);
     padding: 64px 72px;
     border-radius: 0px 5px 5px 0px;
+    position: relative;
+}
+.formularios::after{
+    content: url('../../../imagens/originais/icones/decoradores/cinza/bottom-right-cinza.svg');
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
 }
 .termos-condicoes a{
     color: var(--c11);
@@ -214,6 +229,9 @@ input:checked + label{
     .escolha-opcao{
         border-radius: 5px 5px 0 0;
     }
+    .escolha-opcao::after{
+        display: none;
+    }
     .formularios{
         border-radius: 0 0 5px 5px;
     }
@@ -230,6 +248,9 @@ input:checked + label{
 }
 
 @media (max-width:600px){
+    .formularios::after{
+        display: none;
+    }
     .form{
         grid-template-columns: 1fr;
     }

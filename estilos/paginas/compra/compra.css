@@ -17,6 +17,9 @@
 .carrossel img{
     border-radius: 5px;
 }
+.carrossel img:first-child{
+    grid-column: span 2;
+}
 .informacoes{
     margin-bottom: 48px;
 }
@@ -43,6 +46,7 @@
     padding: 4px 8px;
     background-color: var(--p);
     border-radius: 4px;
+    gap: 8px;
 }
 
 .titulo-secao{
